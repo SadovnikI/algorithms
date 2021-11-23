@@ -1,7 +1,7 @@
 
-function LinearSearch(list, value) {
+const LinearSearch = (list, value) => {
     /**
- * Searches for element in array
+ * Searches for element in array. Complexity O(n)
  * @param  {array} list Array of numbers
  * @param  {Number} value Searched number
  * @return {Number}      Returns element's index ( first found in array )
@@ -15,15 +15,15 @@ function LinearSearch(list, value) {
     }
     // return -1 if element not found or array is empty
     return -1;
-}
+};
 
 let array = [4, 8, 7, 2, 11, 1, 3];
 console.log(LinearSearch(array, 3));
 
 
-function mergeSort(list) {
+const mergeSort = (list) => {
     /**
- * Sorts array
+ * Sorts array. Complexity O(n log(n))
  * @param  {array} list Array of numbers
  * @return {array}      Returns sorted array of numbers
  */
@@ -66,7 +66,7 @@ function mergeSort(list) {
     } else {
         return sorted.concat(right)
     }
-}
+};
 
 
 let array = [4, 8, 7, 2, 11, 1, 3];
@@ -74,9 +74,9 @@ console.log(mergeSort(array));
 
 
 
-function Bubble(list) {
+const Bubble = (list) => {
         /**
- * Sorts array
+ * Sorts array. Complexity O(n^2)
  * @param  {array} list Array of numbers
  * @return {array}      Returns sorted array of numbers
  */
@@ -94,7 +94,7 @@ function Bubble(list) {
         }
     }
     return list;
-}
+};
 
 let array = [4, 8, 7, 2, 11, 1, 3];
 console.log(Bubble(array));
